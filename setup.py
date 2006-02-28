@@ -19,21 +19,26 @@ $Id$
 import os
 
 try:
-    from setuptools import setup, Extension
+    from setuptools import setup, Extension, find_packages
+    packages = find_packages('src', exclude=['zope.testing',
+                                             'zope.testing.*',
+                                             'zope.deprecation'])
+
 except ImportException, e:
     from distutils.core import setup, Extension
-    
-setup(name='zope.i18nmessageid',
+    packages = ['zope', 'zope.i18nmessageid']
+
+setup(name='zope_i18nmessageid',
       version='3.0',
 
       url='http://svn.zope.org/zope.i18nmessageid',
       license='ZPL 2.1',
-      description='Zope 3 Interface Infrastructure',
+      description='Zope 3 i18n Message Identifier',
       author='Zope Corporation and Contributors',
       author_email='zope3-dev@zope.org',
-      long_description='The implementation of interface definitions for Zope 3.',
+      long_description='',
       
-      packages=["zope", "zope.i18nmessageid"],
+      packages=packages,
       package_dir = {'': 'src'},
 
       ext_modules=[Extension("zope.i18nmessageid._zope_i18nmessageid_message",
@@ -42,8 +47,10 @@ setup(name='zope.i18nmessageid',
                               ]),
                    ],
 
+      namespace_packages=['zope',],
       tests_require = ['zope_testing'],
-      requires=['zope_deprecation'],
+      install_requires=['zope_deprecation'],
       include_package_data = True,
+
       zip_safe = False,
       )
