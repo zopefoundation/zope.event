@@ -19,14 +19,9 @@ $Id$
 import os
 
 try:
-    from setuptools import setup, Extension, find_packages
-    packages = find_packages('src', exclude=['zope.testing',
-                                             'zope.testing.*',
-                                             'zope.deprecation'])
-
+    from setuptools import setup, Extension
 except ImportError, e:
     from distutils.core import setup, Extension
-    packages = ['zope', 'zope.i18nmessageid']
 
 setup(name='zope_i18nmessageid',
       version='3.0',
@@ -38,7 +33,7 @@ setup(name='zope_i18nmessageid',
       author_email='zope3-dev@zope.org',
       long_description='',
       
-      packages=packages,
+      packages=['zope', 'zope.i18nmessageid'],
       package_dir = {'': 'src'},
 
       ext_modules=[Extension("zope.i18nmessageid._zope_i18nmessageid_message",
