@@ -24,7 +24,7 @@ try:
                                              'zope.testing.*',
                                              'zope.deprecation'])
 
-except ImportException, e:
+except ImportError, e:
     from distutils.core import setup, Extension
     packages = ['zope', 'zope.i18nmessageid']
 
