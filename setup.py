@@ -23,28 +23,28 @@ try:
 except ImportError, e:
     from distutils.core import setup, Extension
 
-setup(name='zope_i18nmessageid',
-      version='3.0',
-
-      url='http://svn.zope.org/zope.i18nmessageid',
+setup(name='zope.XXX',
+      version='1.0',
+      url='http://svn.zope.org/zope.XXX',
       license='ZPL 2.1',
-      description='Zope 3 i18n Message Identifier',
+      description='XXX',
       author='Zope Corporation and Contributors',
       author_email='zope3-dev@zope.org',
       long_description='',
       
-      packages=['zope', 'zope.i18nmessageid'],
-      package_dir = {'': 'src'},
+      packages=['zope', 'zope.XXX'],
+      package_dir = {'': os.path.join(os.path.dirname(__file__), 'src')},
 
-      ext_modules=[Extension("zope.i18nmessageid._zope_i18nmessageid_message",
-                             [os.path.join('src', 'zope', 'i18nmessageid',
-                                           "_zope_i18nmessageid_message.c")
-                              ]),
-                   ],
+##       ext_modules=[Extension("zope.XXX._zope_XXX",
+##                              [os.path.join('src', 'zope', 'XXX',
+##                                            "_zope_XXX.c")
+##                               ]),
+##                    ],
 
       namespace_packages=['zope',],
       tests_require = ['zope_testing'],
       install_requires=['zope_deprecation'],
+      devel_requires=[],
       include_package_data = True,
 
       zip_safe = False,
