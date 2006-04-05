@@ -24,13 +24,12 @@ except ImportError, e:
     from distutils.core import setup, Extension
 
 setup(name='zope.event',
-      version='1.0',
-      url='http://svn.zope.org/zope.event',
+      version='3.2.0',
+      url='http://svn.zope.org/zope.event/tags/3.2.0',
       license='ZPL 2.1',
       description='Zope Event Publication',
       author='Zope Corporation and Contributors',
       author_email='zope3-dev@zope.org',
-      long_description='',
       
       packages=['zope', 'zope.event'],
       package_dir = {'': os.path.join(os.path.dirname(__file__), 'src')},
