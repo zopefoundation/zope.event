@@ -1,6 +1,11 @@
 zope.event Package Changelog
 ==========================
 
+zope.event version 3.2.0.1 (2006/04/14)
+---------------------------------------
+
+- Packaging change:  suppress inclusion of 'setup.cfg' in 'sdist' builds.
+
 zope.event version 3.2.0 (2005/10/03)
 -------------------------------------
 
