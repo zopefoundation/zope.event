@@ -24,7 +24,7 @@ except ImportError, e:
     from distutils.core import setup, Extension
 
 setup(name='zope.event',
-      version='1.0',
+      version='3.3-dev',
       url='http://svn.zope.org/zope.event',
       license='ZPL 2.1',
       description='Zope Event Publication',
@@ -33,7 +33,7 @@ setup(name='zope.event',
       long_description='',
       
       packages=['zope', 'zope.event'],
-      package_dir = {'': os.path.join(os.path.dirname(__file__), 'src')},
+      package_dir = {'': 'src'},
 
       namespace_packages=['zope',],
       tests_require = ['zope_testing'],
