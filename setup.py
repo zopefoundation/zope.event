@@ -18,13 +18,10 @@ $Id$
 
 import os
 
-try:
-    from setuptools import setup, Extension
-except ImportError, e:
-    from distutils.core import setup, Extension
+from setuptools import setup, find_packages
 
 setup(name='zope.event',
-      version='3.3-dev',
+      version='3.3dev',
       url='http://svn.zope.org/zope.event',
       license='ZPL 2.1',
       description='Zope Event Publication',
@@ -32,7 +29,7 @@ setup(name='zope.event',
       author_email='zope3-dev@zope.org',
       long_description='',
       
-      packages=['zope', 'zope.event'],
+      packages=find_packages('src'),
       package_dir = {'': 'src'},
 
       namespace_packages=['zope',],
