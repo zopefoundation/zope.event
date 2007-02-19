@@ -17,25 +17,36 @@ $Id$
 """
 
 import os
-
 from setuptools import setup, find_packages
 
-setup(name='zope.event',
-      version='3.3dev',
-      url='http://svn.zope.org/zope.event',
-      license='ZPL 2.1',
-      description='Zope Event Publication',
-      author='Zope Corporation and Contributors',
-      author_email='zope3-dev@zope.org',
-      long_description='',
+def read(*rnames):
+    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+
+name='zope.event'
+setup(
+    name=name,
+    version='1.0',
+    url='http://www.python.org/pypi/'+name,
+    license='ZPL 2.1',
+    description='Zope Event Publication',
+    author='Zope Corporation and Contributors',
+    author_email='zope3-dev@zope.org',
+    long_description=(
+        read('README.txt')
+        + '\n' +
+        'Detailed Documentation\n'
+        '**********************\n'
+        + '\n' +
+        read('src', 'zope', 'event', 'README.txt')
+        + '\n' +
+        'Download\n'
+        '**********************\n'
+        ),
       
       packages=find_packages('src'),
       package_dir = {'': 'src'},
-
       namespace_packages=['zope',],
-      tests_require = ['zope_testing'],
-      devel_requires=[],
       include_package_data = True,
-
+      install_requires=['setuptools'],
       zip_safe = False,
       )
