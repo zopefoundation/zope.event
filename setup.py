@@ -19,13 +19,15 @@ $Id$
 import os
 from setuptools import setup, find_packages
 
+
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-name='zope.event'
+name = 'zope.event'
+
 setup(
     name=name,
-    version = '3.4.0b1',
+    version='3.4.0',
     url='http://www.python.org/pypi/'+name,
     license='ZPL 2.1',
     description='Zope Event Publication',
@@ -42,11 +44,10 @@ setup(
         'Download\n'
         '**********************\n'
         ),
-      
       packages=find_packages('src'),
-      package_dir = {'': 'src'},
+      package_dir={'': 'src'},
       namespace_packages=['zope',],
-      include_package_data = True,
+      include_package_data=True,
       install_requires=['setuptools'],
-      zip_safe = False,
+      zip_safe=False,
       )
