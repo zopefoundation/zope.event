@@ -27,7 +27,7 @@ name = 'zope.event'
 
 setup(
     name=name,
-    version='3.4.0',
+    version='3.4.1a1',
     url='http://www.python.org/pypi/'+name,
     license='ZPL 2.1',
     description='Zope Event Publication',
