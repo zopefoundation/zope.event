@@ -15,43 +15,10 @@
 
 $Id$
 """
-
-import os, doctest, new, unittest
-
-try:
-    DocFileSuite = doctest.DocFileSuite # >= Python 2.4.0a2
-except AttributeError:
-    # <= Python 2.4.0a1
-
-    def DocFileSuite(*paths):
-        """Utility to create doc tests from readme files
-
-        Eventually, this, or something like it, will be part of doctest
-        """
-        # It's not entirely obvious how to connection this single string
-        # with unittest.  For now, re-use the _utest() function that comes
-        # standard with doctest in Python 2.3.  One problem is that the
-        # error indicator doesn't point to the line of the doctest file
-        # that failed.
-        t = doctest.Tester(globs={'__name__': '__main__'})
-        suite = unittest.TestSuite()
-        dir = os.path.split(__file__)[0]
-        for path in paths:
-            path = os.path.join(dir, path)
-            source = open(path).read()
-            def runit(path=path, source=source):
-                doctest._utest(t, path, source, path, 0)
-            runit = new.function(runit.func_code, runit.func_globals, path,
-                                 runit.func_defaults, runit.func_closure)
-            f = unittest.FunctionTestCase(runit,
-                                          description="doctest from %s" % path)
-            suite.addTest(f)
-        return suite
+import unittest
+import doctest
 
 def test_suite():
     return unittest.TestSuite((
-        DocFileSuite('README.txt'),
+        doctest.DocFileSuite('README.txt'),
         ))
-
-if __name__ == '__main__':
-    unittest.main(defaultTest='test_suite')

@@ -23,16 +23,14 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-name = 'zope.event'
-
 setup(
-    name=name,
-    version='3.4.1a1',
-    url='http://www.python.org/pypi/'+name,
+    name='zope.event',
+    version='3.4.1',
+    url='http://pypi.python.org/pypi/zope.event',
     license='ZPL 2.1',
-    description='Zope Event Publication',
+    description='Very basic event publishing system',
     author='Zope Corporation and Contributors',
-    author_email='zope3-dev@zope.org',
+    author_email='zope-dev@zope.org',
     long_description=(
         read('README.txt')
         + '\n' +
@@ -42,7 +40,7 @@ setup(
         read('src', 'zope', 'event', 'README.txt')
         + '\n' +
         'Download\n'
-        '**********************\n'
+        '********\n'
         ),
       packages=find_packages('src'),
       package_dir={'': 'src'},
