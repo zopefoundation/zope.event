@@ -4,7 +4,7 @@ CHANGES
 3.4.2 (unreleased)
 ------------------
 
-- ...
+- Added change log to ``long_description``.
 
 3.4.1 (2009-03-03)
 ------------------

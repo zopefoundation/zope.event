@@ -33,14 +33,10 @@ setup(
     author_email='zope-dev@zope.org',
     long_description=(
         read('README.txt')
-        + '\n' +
-        'Detailed Documentation\n'
-        '**********************\n'
-        + '\n' +
+        + '\n\n.. contents::\n\n' +
         read('src', 'zope', 'event', 'README.txt')
         + '\n' +
-        'Download\n'
-        '********\n'
+        read('CHANGES.txt')
         ),
       packages=find_packages('src'),
       package_dir={'': 'src'},
