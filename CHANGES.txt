@@ -6,6 +6,8 @@ CHANGES
 
 - Added change log to ``long_description``.
 
+- Support for Python 3.x.
+
 3.4.1 (2009-03-03)
 ------------------
 

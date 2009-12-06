@@ -22,8 +22,16 @@ $Id$
 """
 
 import os
+import sys
 from setuptools import setup, find_packages
-
+if sys.version_info < (3,):
+    extra = {}
+else:
+    # Python 3 support:
+    extra = dict(
+      use_2to3=True,
+      convert_2to3_doctests=['src/zope/event/README.txt'],
+    )
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
@@ -49,4 +57,6 @@ setup(
       include_package_data=True,
       install_requires=['setuptools'],
       zip_safe=False,
+      test_suite='zope.event.tests.test_suite',
+      **extra
       )
