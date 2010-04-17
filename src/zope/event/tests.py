@@ -14,7 +14,6 @@
 """ Test the event system
 """
 import unittest
-import doctest
 
 class Test_notify(unittest.TestCase):
 
@@ -46,5 +45,4 @@ class Test_notify(unittest.TestCase):
 def test_suite():
     return unittest.TestSuite((
         unittest.makeSuite(Test_notify),
-        doctest.DocFileSuite('README.txt'),
         ))

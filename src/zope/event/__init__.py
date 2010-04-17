@@ -11,13 +11,21 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
-"""base event system implementation
+""" Base event system implementation
 
-$Id$
 """
 
+#: Applications may register for notification of events by appending a
+#: callable to the ``subscribers`` list.
+#: 
+#: Each subscriber takes a single argument, which is the event object
+#: being published.
+#:
+#: Subscribers **MUST NOT** raise exceptions.
 subscribers = []
 
 def notify(event):
+    """ Notify all subscribers of ``event``.
+    """
     for subscriber in subscribers:
         subscriber(event)

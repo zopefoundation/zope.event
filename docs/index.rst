@@ -1,5 +1,5 @@
-Events
-======
+:mod:`zope.event` Documentation
+===============================
 
 This package provides a simple event system on which
 application-specific event systems can be built.
@@ -16,12 +16,16 @@ subscriptions by manipulating this list.  For the examples here, we'll
 save the current contents away and empty the list. We'll restore the
 contents when we're done with our examples.
 
+.. doctest::
+
   >>> import zope.event
   >>> old_subscribers = zope.event.subscribers[:]
   >>> del zope.event.subscribers[:]
 
-The package provides a `notify` function, which is used to
+The package provides a :func:`notify` function, which is used to
 notify subscribers that something has happened:
+
+.. doctest::
 
   >>> class MyEvent:
   ...     pass
@@ -32,16 +36,22 @@ notify subscribers that something has happened:
 The notify function is called with a single object, which we call an
 event.  Any object will do:
 
+.. doctest::
+
   >>> zope.event.notify(None)
   >>> zope.event.notify(42)
 
 An extremely trivial subscription mechanism is provided. Subscribers
 are simply callback functions:
 
+.. doctest::
+
   >>> def f(event):
   ...     print 'got:', event
 
 that are put into the subscriptions list:
+
+.. doctest::
 
   >>> zope.event.subscribers.append(f)
 
@@ -59,6 +69,8 @@ that are put into the subscriptions list:
 
 To unsubscribe, simply remove a subscriber from the list:
 
+.. doctest::
+
   >>> zope.event.subscribers.remove(f)
   >>> zope.event.notify(42)
   also got: 42
@@ -70,4 +82,21 @@ subscribers based on event types or data.
 
 We're done, so we'll restore the subscribers:
 
+.. doctest::
+
   >>> zope.event.subscribers[:] = old_subscribers
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   api
+   hacking
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

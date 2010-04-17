@@ -30,7 +30,7 @@ else:
     # Python 3 support:
     extra = dict(
       use_2to3=True,
-      convert_2to3_doctests=['src/zope/event/README.txt'],
+      convert_2to3_doctests=['docs/index.rst'],
     )
 
 def read(*rnames):
@@ -46,8 +46,6 @@ setup(
     author_email='zope-dev@zope.org',
     long_description=(
         read('README.txt')
-        + '\n\n.. contents::\n\n' +
-        read('src', 'zope', 'event', 'README.txt')
         + '\n' +
         read('CHANGES.txt')
         ),
