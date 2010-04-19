@@ -21,7 +21,7 @@
 #: Each subscriber takes a single argument, which is the event object
 #: being published.
 #:
-#: Subscribers **MUST NOT** raise exceptions.
+#: Exceptions raised by subscribers will be propagated.
 subscribers = []
 
 def notify(event):
