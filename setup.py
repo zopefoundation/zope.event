@@ -49,12 +49,24 @@ setup(
         + '\n' +
         read('CHANGES.txt')
         ),
-      packages=find_packages('src'),
-      package_dir={'': 'src'},
-      namespace_packages=['zope',],
-      include_package_data=True,
-      install_requires=['setuptools'],
-      zip_safe=False,
-      test_suite='zope.event.tests.test_suite',
-      **extra
-      )
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: Zope Public License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 2.4",
+        "Programming Language :: Python :: 2.5",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 3.1",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        ],
+
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
+    namespace_packages=['zope',],
+    include_package_data=True,
+    install_requires=['setuptools'],
+    zip_safe=False,
+    test_suite='zope.event.tests.test_suite',
+    **extra
+    )
