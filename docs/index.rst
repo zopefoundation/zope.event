@@ -17,6 +17,7 @@ Contents:
    :maxdepth: 2
 
    usage
+   theory
    api
    hacking
 
