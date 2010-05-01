@@ -1,7 +1,7 @@
 CHANGES
 =======
 
-3.4.2 (unreleased)
+3.5.0 (2010-05-01)
 ------------------
 
 - Added change log to ``long_description``.

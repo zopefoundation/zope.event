@@ -38,7 +38,7 @@ def read(*rnames):
 
 setup(
     name='zope.event',
-    version='3.4.2dev',
+    version='3.5.1dev',
     url='http://pypi.python.org/pypi/zope.event',
     license='ZPL 2.1',
     description='Very basic event publishing system',
@@ -57,6 +57,7 @@ setup(
         "Programming Language :: Python :: 2.4",
         "Programming Language :: Python :: 2.5",
         "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.1",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
