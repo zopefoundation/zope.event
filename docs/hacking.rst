@@ -186,12 +186,13 @@ You can now run the tests:
 Building the documentation using :mod:`zc.buildout`
 ---------------------------------------------------
 
-The :mod:`zope.event` buildout creates the necessary scripts to build
+The :mod:`zope.event` buildout installs the Sphinx scripts required to build
 the documentation, including testing its code snippets:
 
 .. code-block:: sh
 
-   $ bin/make-docs
+   $ cd docs
+   $ PATH=../bin:$PATH make doctest html
    .../bin/sphinx-build -b doctest -d .../docs/_build/doctrees   .../docs .../docs/_build/doctest
    running tests...
 
