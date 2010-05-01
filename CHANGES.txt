@@ -1,10 +1,15 @@
-CHANGES
-=======
+``zope.event`` Changelog
+========================
+
+3.5.1 (unreleased)
+------------------
+
+- Added Sphinx documentation.
 
 3.5.0 (2010-05-01)
 ------------------
 
-- Added change log to ``long_description``.
+- Added change log to ``long-description``.
 
 - Support for Python 3.x.
 
