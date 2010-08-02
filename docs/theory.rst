@@ -3,7 +3,7 @@ Theory of Operation
 
 .. note::
 
-   This section explains both why an applciation or framework might
+   This section explains both why an application or framework might
    publish events, and various ways the integrator might configure
    the subscribers to achieve different goals.
 
