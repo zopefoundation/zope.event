@@ -4,6 +4,9 @@
 3.5.2 (unreleased)
 ------------------
 
+- This release is the last which will maintain support for Python 2.4 /
+  Python 2.5.
+
 - Added support for continuous integration using ``tox`` and ``jenkins``.
 
 - Added 'setup.py dev' alias (runs ``setup.py develop`` plus installs
