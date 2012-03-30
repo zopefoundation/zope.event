@@ -20,16 +20,7 @@
 """
 
 import os
-import sys
 from setuptools import setup, find_packages
-if sys.version_info < (3,):
-    extra = {}
-else:
-    # Python 3 support:
-    extra = dict(
-      use_2to3=True,
-      convert_2to3_doctests=['docs/index.rst'],
-    )
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
@@ -69,5 +60,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=False,
     test_suite='zope.event.tests.test_suite',
-    **extra
-    )
+    extras_require={'docs': ['Sphinx'],
+                    'testing': ['nose', 'coverage'],
+                   },
+)
