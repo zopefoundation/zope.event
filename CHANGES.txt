@@ -4,7 +4,12 @@
 3.5.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added support for continuous integration using ``tox`` and ``jenkins``.
+
+- Added 'setup.py dev' alias (runs ``setup.py develop`` plus installs
+  ``nose`` and ``coverage``).
+
+- Added 'setup.py docs' alias (installs ``Sphinx`` and dependencies).
 
 
 3.5.1 (2011-08-04)
