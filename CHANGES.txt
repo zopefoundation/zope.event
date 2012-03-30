@@ -4,9 +4,9 @@
 3.6.0 (unreleased)
 ------------------
 
-- Drop explicit support for Python 2.4 / 2.5 / 3.1.
+- Dropped explicit support for Python 2.4 / 2.5 / 3.1.
 
-- Add support for PyPy.
+- Added support for PyPy.
 
 
 3.5.2 (2012-03-30)
