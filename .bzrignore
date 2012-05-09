@@ -8,3 +8,4 @@
 .coverage
 build
 __pycache__
+.tox
