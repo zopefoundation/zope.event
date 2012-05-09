@@ -1,8 +1,10 @@
 ``zope.event`` Changelog
 ========================
 
-3.6.0 (unreleased)
+4.0.0 (unreleased)
 ------------------
+
+- Automated build of Sphinx HTML docs and running doctest snippets via tox.
 
 - Dropped explicit support for Python 2.4 / 2.5 / 3.1.
 
