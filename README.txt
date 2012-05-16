@@ -11,4 +11,4 @@ The ``zope.event`` package provides a simple event system, including:
   event dispatching system that builds on ``zope.event`` can be found in
   ``zope.component``.
 
-Please see ``doc/index.rst`` for the documentation.
+Please see http://docs.zope.org/zope.event/ for the documentation.
