@@ -4,7 +4,7 @@
 4.0.2 (unreleased)
 ------------------
 
-- TBD
+- Added support for jython 2.7.
 
 
 4.0.1 (2012-11-21)
