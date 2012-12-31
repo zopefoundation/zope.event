@@ -1,8 +1,10 @@
 ``zope.event`` Changelog
 ========================
 
-4.0.2 (unreleased)
+4.0.2 (2012-12-31)
 ------------------
+
+- Fleshed out PyPI Trove classifiers.
 
 - Added support for jython 2.7.
 
