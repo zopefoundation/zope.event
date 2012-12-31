@@ -53,6 +53,7 @@ setup(
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: Jython",
         "Programming Language :: Python :: Implementation :: PyPy",
+        "Framework :: Zope3",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
 
