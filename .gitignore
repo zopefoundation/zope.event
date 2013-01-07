@@ -1,0 +1,15 @@
+*$py.class
+*.pyc
+__pycache__
+./.installed.cfg
+./bin
+./eggs
+./develop-eggs
+./parts
+*.egg-info
+.tox
+build
+docs/_build
+.coverage
+nosetests.xml
+coverage.xml
