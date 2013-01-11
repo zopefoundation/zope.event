@@ -34,9 +34,9 @@ setup(
     author='Zope Foundation and Contributors',
     author_email='zope-dev@zope.org',
     long_description=(
-        read('README.txt')
+        read('README.rst')
         + '\n' +
-        read('CHANGES.txt')
+        read('CHANGES.rst')
         ),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
