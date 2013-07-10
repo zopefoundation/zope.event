@@ -13,3 +13,8 @@ docs/_build
 .coverage
 nosetests.xml
 coverage.xml
+.installed.cfg
+bin
+develop-eggs
+eggs
+parts
