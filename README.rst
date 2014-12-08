@@ -1,6 +1,9 @@
 ``zope.event`` README
 =====================
 
+.. image:: https://travis-ci.org/zopefoundation/zope.event.png?branch=master
+        :target: https://travis-ci.org/zopefoundation/zope.event
+
 The ``zope.event`` package provides a simple event system, including:
 
 - An event publishing API, intended for use by applications which are
