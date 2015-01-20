@@ -1,3 +1,5 @@
+.. _api-docs:
+
 :mod:`zope.event` API Reference
 ===============================
 

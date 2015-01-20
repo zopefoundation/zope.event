@@ -1,3 +1,5 @@
+.. _usage-docs:
+
 Using :mod:`zope.event`
 =======================
 
