@@ -1,6 +1,10 @@
 ``zope.event`` README
 =====================
 
+.. image:: https://pypip.in/version/zope.event/badge.svg?style=flat
+    :target: https://pypi.python.org/pypi/zope.event/
+    :alt: Latest Version
+
 .. image:: https://travis-ci.org/zopefoundation/zope.event.png?branch=master
         :target: https://travis-ci.org/zopefoundation/zope.event
 
