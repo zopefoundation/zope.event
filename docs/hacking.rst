@@ -181,7 +181,7 @@ Setting up the buildout
    ...
    Generated script '.../bin/buildout'
    $ bin/buildout
-   Develop: '/home/jrandom/projects/Zope/BTK/event/.'
+   Develop: '/home/jrandom/projects/Zope/zope.event/.'
    ...
    Generated script '.../bin/sphinx-quickstart'.
    Generated script '.../bin/sphinx-build'.
