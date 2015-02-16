@@ -4,39 +4,39 @@
 4.0.4 (unreleased)
 ------------------
 
-- TBD
+- Require 100% branch (as well as statement) coverage.
 
 
 4.0.3 (2014-03-19)
 ------------------
 
-- Added support for Python 3.4.
+- Add support for Python 3.4.
 
-- Updated ``boostrap.py`` to version 2.2.
+- Update ``boostrap.py`` to version 2.2.
 
 
 4.0.2 (2012-12-31)
 ------------------
 
-- Fleshed out PyPI Trove classifiers.
+- Flesh out PyPI Trove classifiers.
 
-- Added support for jython 2.7.
+- Add support for jython 2.7.
 
 
 4.0.1 (2012-11-21)
 ------------------
 
-- Added support for Python 3.3.
+- Add support for Python 3.3.
 
 
 4.0.0 (2012-05-16)
 ------------------
 
-- Automated build of Sphinx HTML docs and running doctest snippets via tox.
+- Automate build of Sphinx HTML docs and running doctest snippets via tox.
 
-- Dropped explicit support for Python 2.4 / 2.5 / 3.1.
+- Drop explicit support for Python 2.4 / 2.5 / 3.1.
 
-- Added support for PyPy.
+- Add support for PyPy.
 
 
 3.5.2 (2012-03-30)
@@ -45,30 +45,33 @@
 - This release is the last which will maintain support for Python 2.4 /
   Python 2.5.
 
-- Added support for continuous integration using ``tox`` and ``jenkins``.
+- Add support for continuous integration using ``tox`` and ``jenkins``.
 
-- Added 'setup.py dev' alias (runs ``setup.py develop`` plus installs
+- Add 'setup.py dev' alias (runs ``setup.py develop`` plus installs
   ``nose`` and ``coverage``).
 
-- Added 'setup.py docs' alias (installs ``Sphinx`` and dependencies).
+- Add 'setup.py docs' alias (installs ``Sphinx`` and dependencies).
 
 
 3.5.1 (2011-08-04)
 ------------------
 
-- Added Sphinx documentation.
+- Add Sphinx documentation.
+
 
 3.5.0 (2010-05-01)
 ------------------
 
-- Added change log to ``long-description``.
+- Add change log to ``long-description``.
 
-- Support for Python 3.x.
+- Add support for Python 3.x.
+
 
 3.4.1 (2009-03-03)
 ------------------
 
 - A few minor cleanups.
+
 
 3.4.0 (2007-07-14)
 ------------------
