@@ -218,14 +218,14 @@ configured commands.
 its ``tox.ini`` file:
 
 - The ``py26``, ``py27``, ``py33``, ``py34``, and ``pypy`` environments
-  builds a ``virtualenv`` with ``pypy``,
+  builds a ``virtualenv`` with the corresponding interpreter,
   installs :mod:`zope.event` and dependencies, and runs the tests
-  via ``python setup.py test -q``.
+  via ``python setup.py -q test -q``.
 
 - The ``coverage`` environment builds a ``virtualenv`` with ``python2.6``,
   installs :mod:`zope.event`, installs
   :mod:`nose` and :mod:`coverage`, and runs ``nosetests`` with statement
-  coverage.
+  and branch coverage.
 
 - The ``docs`` environment builds a virtualenv with ``python2.6``, installs
   :mod:`zope.event`, installs ``Sphinx`` and
