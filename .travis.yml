@@ -9,8 +9,8 @@ python:
     - pypy
     - pypy3
 install:
-    - pip install . --use-mirrors
+    - pip install .
 script:
-    - python setup.py test -q
+    - python setup.py -q test -q
 notifications:
     email: false
