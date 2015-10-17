@@ -1,0 +1,42 @@
+Class-based event handlers
+==========================
+
+A light-weight event-handler framework based on event classes is
+provided by the ``zope.event.classhandler`` module.
+
+Handlers are registered for event classes:
+
+    >>> import zope.event.classhandler
+
+    >>> class MyEvent(object):
+    ...     def __repr__(self):
+    ...         return self.class.__name__
+
+    >>> def handler1(event):
+    ...     print("handler1 %r" % event)
+
+    >>> zope.event.classhandler.handler(MyEvent, handler1)
+
+Descriptor syntax:
+
+    >>> @zope.event.classhandler.handler(MyEvent)
+    ... def handler2(event):
+    ...     print("handler2 %r" % event)
+
+    >>> class MySubEvent(MyEvent):
+    ...     pass
+
+    >>> @zope.event.classhandler.handler(MySubEvent)
+    ... def handler3(event):
+    ...     print("handler3 %r" % event)
+
+
+Subscribers are called in class method-resolution order, so only
+new-style event classes are supported, and then by order of registry.
+
+    >>> import zope.event
+    >>> zope.event.notify(MySubEvent())
+    handler3 MySubEvent
+    handler1 MySubEvent
+    handler2 MySubEvent
+

@@ -19,6 +19,7 @@ Contents:
    usage
    theory
    api
+   classhandler
    hacking
 
 Indices and tables
