@@ -1,11 +1,11 @@
 ``zope.event`` Changelog
 ========================
 
-4.0.4 (unreleased)
+4.1.0 (unreleased)
 ------------------
 
 - Require 100% branch (as well as statement) coverage.
-
+- Added a simple class-based handler implementation.
 
 4.0.3 (2014-03-19)
 ------------------

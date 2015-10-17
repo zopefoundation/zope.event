@@ -13,6 +13,7 @@
 ##############################################################################
 """ Test the event system
 """
+import doctest
 import unittest
 
 class Test_notify(unittest.TestCase):
@@ -42,7 +43,18 @@ class Test_notify(unittest.TestCase):
         self._callFUT(event)
         self.assertEqual(dummy, [event])
 
+def setUpClassHandlers(test):
+    import zope.event
+    test.globs['old_subs'] = zope.event.subscribers
+
+def tearDownClassHandlers(test):
+    import zope.event
+    zope.event.subscribers = test.globs['old_subs']
+
 def test_suite():
     return unittest.TestSuite((
         unittest.makeSuite(Test_notify),
+        doctest.DocTestSuite(
+            'zope.event.classhandler',
+            setUp=setUpClassHandlers, tearDown=tearDownClassHandlers)
         ))
