@@ -10,7 +10,7 @@ Handlers are registered for event classes:
 
     >>> class MyEvent(object):
     ...     def __repr__(self):
-    ...         return self.class.__name__
+    ...         return self.__class__.__name__
 
     >>> def handler1(event):
     ...     print("handler1 %r" % event)
