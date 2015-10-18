@@ -27,7 +27,7 @@ def read(*rnames):
 
 setup(
     name='zope.event',
-    version='4.1.0'
+    version='4.1.0',
     url='http://pypi.python.org/pypi/zope.event',
     license='ZPL 2.1',
     description='Very basic event publishing system',
