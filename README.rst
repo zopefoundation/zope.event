@@ -1,7 +1,7 @@
 ``zope.event`` README
 =====================
 
-.. image:: https://pypip.in/version/zope.event/badge.svg?style=flat
+.. image:: https://img.shields.io/pypi/v/zope.event.svg
         :target: https://pypi.python.org/pypi/zope.event/
         :alt: Latest Version
 
