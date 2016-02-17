@@ -27,7 +27,7 @@ def read(*rnames):
 
 setup(
     name='zope.event',
-    version='4.1.1.dev0',
+    version='4.2.0.dev0',
     url='http://pypi.python.org/pypi/zope.event',
     license='ZPL 2.1',
     description='Very basic event publishing system',
@@ -45,10 +45,8 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.6",
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.2",
         "Programming Language :: Python :: 3.3",
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
