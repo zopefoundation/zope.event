@@ -1,8 +1,13 @@
-:mod:`zope.event` Documentation
-===============================
+=================================
+ :mod:`zope.event` Documentation
+=================================
 
 This package provides a simple event system on which
-application-specific event systems can be built.
+application-specific event systems can be built. For example, a
+type-based event dispatching system that builds on `zope.interface
+<https://zopeinterface.readthedocs.io/en/latest/>`_ can be found in
+`zope.component <https://zopecomponent.readthedocs.io/en/latest>`_. A
+simpler system is distributed with this package and is described in :doc:`classhandler`.
 
 Application code can generate events without being concerned about the
 event-processing frameworks that might handle the events.
@@ -22,8 +27,9 @@ Contents:
    classhandler
    hacking
 
-Indices and tables
-==================
+====================
+ Indices and tables
+====================
 
 * :ref:`genindex`
 * :ref:`modindex`
