@@ -23,12 +23,13 @@ import os
 from setuptools import setup, find_packages
 
 def read(*rnames):
-    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+    with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
+        return f.read()
 
 setup(
     name='zope.event',
     version='4.2.1.dev0',
-    url='http://pypi.python.org/pypi/zope.event',
+    url='http://github.com/zopefoundation/zope.event',
     license='ZPL 2.1',
     description='Very basic event publishing system',
     author='Zope Foundation and Contributors',
@@ -37,7 +38,7 @@ setup(
         read('README.rst')
         + '\n' +
         read('CHANGES.rst')
-        ),
+    ),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
@@ -47,16 +48,15 @@ setup(
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.3",
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: Jython",
         "Programming Language :: Python :: Implementation :: PyPy",
         "Framework :: Zope3",
         "Topic :: Software Development :: Libraries :: Python Modules",
-        ],
-
+    ],
     packages=find_packages('src'),
     package_dir={'': 'src'},
     namespace_packages=['zope',],
@@ -64,7 +64,12 @@ setup(
     install_requires=['setuptools'],
     zip_safe=False,
     test_suite='zope.event.tests.test_suite',
-    extras_require={'docs': ['Sphinx'],
-                    'testing': ['nose', 'coverage'],
-                   },
+    extras_require={
+        'docs': [
+            'Sphinx',
+        ],
+        'test': [
+            'zope.testrunner',
+        ],
+    },
 )

@@ -1,5 +1,6 @@
-``zope.event`` README
-=====================
+=======================
+ ``zope.event`` README
+=======================
 
 .. image:: https://img.shields.io/pypi/v/zope.event.svg
         :target: https://pypi.python.org/pypi/zope.event/
@@ -22,4 +23,4 @@ The ``zope.event`` package provides a simple event system, including:
   event dispatching system that builds on ``zope.event`` can be found in
   ``zope.component``.
 
-Please see http://zopeevent.rtfd.org/ for the documentation.
+Please see http://zopeevent.readthedocs.io/ for the documentation.

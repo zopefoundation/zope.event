@@ -53,7 +53,7 @@ def tearDownClassHandlers(test):
 
 def test_suite():
     return unittest.TestSuite((
-        unittest.makeSuite(Test_notify),
+        unittest.defaultTestLoader.loadTestsFromName(__name__),
         doctest.DocTestSuite(
             'zope.event.classhandler',
             setUp=setUpClassHandlers, tearDown=tearDownClassHandlers)
