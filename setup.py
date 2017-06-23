@@ -39,6 +39,7 @@ setup(
         + '\n' +
         read('CHANGES.rst')
     ),
+    keywords="event framework dispatch subscribe publish",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
