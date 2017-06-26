@@ -17,11 +17,12 @@
 
 #: Applications may register for notification of events by appending a
 #: callable to the ``subscribers`` list.
-#: 
+#:
 #: Each subscriber takes a single argument, which is the event object
 #: being published.
 #:
-#: Exceptions raised by subscribers will be propagated.
+#: Exceptions raised by subscribers will be propagated *without* running
+#: any remaining subscribers.
 subscribers = []
 
 def notify(event):

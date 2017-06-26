@@ -1,5 +1,6 @@
-Class-based event handlers
-==========================
+============================
+ Class-based event handlers
+============================
 
 A light-weight event-handler framework based on event classes is
 provided by the ``zope.event.classhandler`` module.
@@ -39,4 +40,3 @@ new-style event classes are supported, and then by order of registry.
     handler3 MySubEvent
     handler1 MySubEvent
     handler2 MySubEvent
-
