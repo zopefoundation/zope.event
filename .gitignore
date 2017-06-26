@@ -11,6 +11,8 @@ __pycache__
 build
 docs/_build
 .coverage
+.coverage.*
+htmlcov
 nosetests.xml
 coverage.xml
 .installed.cfg

@@ -1,14 +1,17 @@
-``zope.event`` Changelog
-========================
+==========================
+ ``zope.event`` Changelog
+==========================
 
-4.2.1 (unreleased)
-------------------
+4.3.0 (unreleased)
+==================
 
-- TBD
+- Add support for Python 3.6.
+
+- Drop support for Python 3.3.
 
 
 4.2.0 (2016-02-17)
-------------------
+==================
 
 - Add support for Python 3.5.
 
@@ -16,7 +19,7 @@
 
 
 4.1.0 (2015-10-18)
-------------------
+==================
 
 - Require 100% branch (as well as statement) coverage.
 
@@ -24,7 +27,7 @@
 
 
 4.0.3 (2014-03-19)
-------------------
+==================
 
 - Add support for Python 3.4.
 
@@ -32,7 +35,7 @@
 
 
 4.0.2 (2012-12-31)
-------------------
+==================
 
 - Flesh out PyPI Trove classifiers.
 
@@ -40,13 +43,13 @@
 
 
 4.0.1 (2012-11-21)
-------------------
+==================
 
 - Add support for Python 3.3.
 
 
 4.0.0 (2012-05-16)
-------------------
+==================
 
 - Automate build of Sphinx HTML docs and running doctest snippets via tox.
 
@@ -56,7 +59,7 @@
 
 
 3.5.2 (2012-03-30)
-------------------
+==================
 
 - This release is the last which will maintain support for Python 2.4 /
   Python 2.5.
@@ -70,13 +73,13 @@
 
 
 3.5.1 (2011-08-04)
-------------------
+==================
 
 - Add Sphinx documentation.
 
 
 3.5.0 (2010-05-01)
-------------------
+==================
 
 - Add change log to ``long-description``.
 
@@ -84,12 +87,12 @@
 
 
 3.4.1 (2009-03-03)
-------------------
+==================
 
 - A few minor cleanups.
 
 
 3.4.0 (2007-07-14)
-------------------
+==================
 
 - Initial release as a separate project.
