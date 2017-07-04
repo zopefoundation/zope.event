@@ -29,7 +29,7 @@ class Test_notify(unittest.TestCase):
 
     def _callFUT(self, event):
         from zope.event import notify
-        notify(event)
+        return notify(event)
 
     def test_empty(self):
         event = object()
@@ -42,6 +42,10 @@ class Test_notify(unittest.TestCase):
         event = object()
         self._callFUT(event)
         self.assertEqual(dummy, [event])
+
+    def test_returns_argument(self):
+        result = self._callFUT(self)
+        self.assertIs(result, self)
 
 def setUpClassHandlers(test):
     import zope.event

@@ -30,3 +30,4 @@ def notify(event):
     """
     for subscriber in subscribers:
         subscriber(event)
+    return event
