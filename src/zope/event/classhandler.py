@@ -34,7 +34,7 @@ Subscribers are called in class method-resolution order, so only
 new-style event classes are supported, and then by order of registry.
 
     >>> import zope.event
-    >>> zope.event.notify(MySubEvent())
+    >>> _ = zope.event.notify(MySubEvent())
     handler3 MySubEvent
     handler1 MySubEvent
     handler2 MySubEvent

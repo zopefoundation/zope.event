@@ -9,6 +9,10 @@
 
 - Drop support for Python 3.3.
 
+- Make the ``notify`` function return its event argument. This
+  facilitates testing and higher-level APIs such as those found in
+  `zope.lifecycleevent <https://github.com/zopefoundation/zope.lifecycleevent/issues/11>`_.
+
 
 4.2.0 (2016-02-17)
 ==================
