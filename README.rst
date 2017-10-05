@@ -6,7 +6,7 @@
         :target: https://pypi.python.org/pypi/zope.event/
         :alt: Latest Version
 
-.. image:: https://travis-ci.org/zopefoundation/zope.event.png?branch=master
+.. image:: https://travis-ci.org/zopefoundation/zope.event.svg?branch=master
         :target: https://travis-ci.org/zopefoundation/zope.event
 
 .. image:: https://readthedocs.org/projects/zopeevent/badge/?version=latest
