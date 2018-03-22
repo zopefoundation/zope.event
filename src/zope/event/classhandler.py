@@ -42,13 +42,14 @@ new-style event classes are supported, and then by order of registry.
 """
 import zope.event
 
+__all__ = [
+    'handler',
+]
+
 registry = {}
 
-def handler(event_class, handler_=None, decorator=False):
-    """
-    handler(event_class, [handler]) -> None
-
-    Define an event handler for a (new-style) class.
+def handler(event_class, handler_=None, _decorator=False):
+    """ Define an event handler for a (new-style) class.
 
     This can be called with a class and a handler, or with just a
     class and the result used as a handler decorator.
@@ -64,7 +65,7 @@ def handler(event_class, handler_=None, decorator=False):
     else:
         registry[event_class].append(handler_)
 
-    if decorator:
+    if _decorator:
         return handler
 
 def dispatch(event):
