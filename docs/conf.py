@@ -29,6 +29,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
     'sphinx.ext.coverage',
+    'sphinx.ext.viewcode',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -45,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'zope.event'
-copyright = u'2010, Zope Foundation and Contributors'
+copyright = u'2010-2018, Zope Foundation and Contributors'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -202,4 +203,10 @@ latex_documents = [
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'http://docs.python.org/': None}
+intersphinx_mapping = {
+    'https://docs.python.org/': None
+}
+
+autodoc_default_flags = ['members', 'show-inheritance']
+autodoc_member_order = 'bysource'
+autoclass_content = 'both'
