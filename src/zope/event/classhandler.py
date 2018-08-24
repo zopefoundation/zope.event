@@ -8,11 +8,10 @@ Handlers are registered for event classes:
     >>> import zope.event.classhandler
 
     >>> class MyEvent(object):
-    ...     def __repr__(self):
-    ...         return self.__class__.__name__
+    ...     pass
 
     >>> def handler1(event):
-    ...     print("handler1 %r" % event)
+    ...     print("handler1 %r" % event.__class__.__name__)
 
     >>> zope.event.classhandler.handler(MyEvent, handler1)
 
@@ -20,14 +19,14 @@ Descriptor syntax:
 
     >>> @zope.event.classhandler.handler(MyEvent)
     ... def handler2(event):
-    ...     print("handler2 %r" % event)
+    ...     print("handler2 %r" % event.__class__.__name__)
 
     >>> class MySubEvent(MyEvent):
     ...     pass
 
     >>> @zope.event.classhandler.handler(MySubEvent)
     ... def handler3(event):
-    ...     print("handler3 %r" % event)
+    ...     print("handler3 %r" % event.__class__.__name__)
 
 
 Subscribers are called in class method-resolution order, so only
@@ -35,9 +34,9 @@ new-style event classes are supported, and then by order of registry.
 
     >>> import zope.event
     >>> zope.event.notify(MySubEvent())
-    handler3 MySubEvent
-    handler1 MySubEvent
-    handler2 MySubEvent
+    handler3 'MySubEvent'
+    handler1 'MySubEvent'
+    handler2 'MySubEvent'
 
 """
 import zope.event
