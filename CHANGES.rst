@@ -2,8 +2,8 @@
  ``zope.event`` Changelog
 ==========================
 
-4.3.1 (unreleased)
-==================
+4.4 (2018-10-05)
+================
 
 - Add support for Python 3.7
 
