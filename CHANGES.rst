@@ -2,10 +2,12 @@
  ``zope.event`` Changelog
 ==========================
 
-4.5 (unreleased)
-================
+4.5.0 (unreleased)
+==================
 
-- Nothing changed yet.
+- Add support for Python 3.8 and 3.9.
+
+- Remove support for Python 3.4.
 
 
 4.4 (2018-10-05)
