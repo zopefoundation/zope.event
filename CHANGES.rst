@@ -2,7 +2,7 @@
  ``zope.event`` Changelog
 ==========================
 
-4.5.0 (unreleased)
+4.5.0 (2020-09-18)
 ==================
 
 - Add support for Python 3.8 and 3.9.
