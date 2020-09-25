@@ -115,3 +115,7 @@ To unsubscribe, simply remove a subscriber from the list:
 .. testcleanup::
 
   zope.event.subscribers[:] = old_subscribers
+
+.. note:: The :func:`~.zope.event.notify` is synchronous, meaning it calls the
+   subscribers in sequential order (and not in parallel). This also means that the
+   process will not continue until all subscribers are done handling the event.

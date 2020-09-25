@@ -113,7 +113,7 @@ you can see how well the tests cover the code:
    ...
    Name         Stmts   Exec  Cover   Missing
    ------------------------------------------
-   zope.event       5      5   100%   
+   zope.event       5      5   100%
    ----------------------------------------------------------------------
    Ran 3 tests in 0.019s
 
@@ -124,7 +124,7 @@ Building the documentation
 --------------------------
 
 :mod:`zope.event` uses the nifty :mod:`Sphinx` documentation system
-for building its docs.  Using the same virtualenv you set up to run the
+for building its docs. Using the same virtualenv you set up to run the
 tests, you can build the docs:
 
 .. code-block:: sh
@@ -213,7 +213,7 @@ tool designed to run tests against multiple Python versions.  It creates
 a ``virtualenv`` for each configured version, installs the current package
 and configured dependencies into each ``virtualenv``, and then runs the
 configured commands.
-   
+
 :mod:`zope.event` configures the following :mod:`tox` environments via
 its ``tox.ini`` file:
 
