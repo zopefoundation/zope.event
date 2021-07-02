@@ -86,14 +86,14 @@ added to the subscriptions list:
 .. doctest::
 
   >>> def f(event):
-  ...     print 'got:', event
+  ...     print('got:', event)
   >>> zope.event.subscribers.append(f)
 
   >>> zope.event.notify(42)
   got: 42
 
   >>> def g(event):
-  ...     print 'also got:', event
+  ...     print('also got:', event)
 
   >>> zope.event.subscribers.append(g)
 
