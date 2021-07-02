@@ -5,7 +5,7 @@
 4.5.1 (unreleased)
 ==================
 
-- Nothing changed yet.
+- Port documentation to Python 3.
 
 
 4.5.0 (2020-09-18)

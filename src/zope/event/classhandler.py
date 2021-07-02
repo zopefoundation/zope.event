@@ -47,6 +47,7 @@ __all__ = [
 
 registry = {}
 
+
 def handler(event_class, handler_=None, _decorator=False):
     """ Define an event handler for a (new-style) class.
 
@@ -66,6 +67,7 @@ def handler(event_class, handler_=None, _decorator=False):
 
     if _decorator:
         return handler
+
 
 def dispatch(event):
     for event_class in event.__class__.__mro__:

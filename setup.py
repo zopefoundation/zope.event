@@ -22,9 +22,11 @@
 import os
 from setuptools import setup, find_packages
 
+
 def read(*rnames):
     with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
         return f.read()
+
 
 setup(
     name='zope.event',
@@ -62,7 +64,7 @@ setup(
     ],
     packages=find_packages('src'),
     package_dir={'': 'src'},
-    namespace_packages=['zope',],
+    namespace_packages=['zope', ],
     include_package_data=True,
     install_requires=['setuptools'],
     zip_safe=False,

@@ -25,6 +25,7 @@
 #: any remaining subscribers.
 subscribers = []
 
+
 def notify(event):
     """ Notify all subscribers of ``event``.
     """
