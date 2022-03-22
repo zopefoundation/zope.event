@@ -32,7 +32,7 @@ setup(
     name='zope.event',
     version='4.5.1.dev0',
     url='https://github.com/zopefoundation/zope.event',
-    license='ZPL 2.1',
+    license='ZPL-2.1',
     description='Very basic event publishing system',
     author='Zope Foundation and Contributors',
     author_email='zope-dev@zope.org',
