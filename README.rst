@@ -6,8 +6,8 @@
         :target: https://pypi.python.org/pypi/zope.event/
         :alt: Latest Version
 
-.. image:: https://travis-ci.com/zopefoundation/zope.event.svg?branch=master
-        :target: https://travis-ci.com/zopefoundation/zope.event
+.. image:: https://github.com/zopefoundation/zope.event/actions/workflows/tests.yml/badge.svg
+        :target: https://github.com/zopefoundation/zope.event/actions/workflows/tests.yml
 
 .. image:: https://readthedocs.org/projects/zopeevent/badge/?version=latest
         :target: http://zopeevent.readthedocs.org/en/latest/
