@@ -2,12 +2,13 @@
  ``zope.event`` Changelog
 ==========================
 
-4.5.1 (unreleased)
-==================
+4.6 (unreleased)
+================
 
 - Port documentation to Python 3.
 
-- Add support for Python 3.10.
+- Add support for Python 3.10, 3.11.
+
 
 4.5.0 (2020-09-18)
 ==================

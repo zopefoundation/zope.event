@@ -41,6 +41,7 @@ new-style event classes are supported, and then by order of registry.
 """
 import zope.event
 
+
 __all__ = [
     'handler',
 ]
