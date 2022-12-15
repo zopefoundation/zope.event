@@ -2,7 +2,7 @@
  ``zope.event`` Changelog
 ==========================
 
-4.6 (unreleased)
+4.6 (2022-12-15)
 ================
 
 - Port documentation to Python 3.
