@@ -5,7 +5,7 @@
 5.0 (unreleased)
 ================
 
-- Nothing changed yet.
+- Drop support for Python 2.7, 3.5, 3.6.
 
 
 4.6 (2022-12-15)
