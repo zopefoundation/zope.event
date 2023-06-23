@@ -12,7 +12,7 @@
 #
 ##############################################################################
 # This package is developed by the Zope Toolkit project, documented here:
-# http://docs.zope.org/zopetoolkit
+# https://zopetoolkit.readthedocs.io/
 # When developing and releasing this package, please follow the documented
 # Zope Toolkit policies as described by this documentation.
 ##############################################################################
@@ -32,12 +32,12 @@ def read(*rnames):
 
 setup(
     name='zope.event',
-    version='4.7.dev0',
+    version='5.0.dev0',
     url='https://github.com/zopefoundation/zope.event',
     license='ZPL-2.1',
     description='Very basic event publishing system',
     author='Zope Foundation and Contributors',
-    author_email='zope-dev@zope.org',
+    author_email='zope-dev@zope.dev',
     long_description=(
         read('README.rst')
         + '\n' +
@@ -50,11 +50,7 @@ setup(
         "License :: OSI Approved :: Zope Public License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
@@ -70,9 +66,9 @@ setup(
     package_dir={'': 'src'},
     namespace_packages=['zope', ],
     include_package_data=True,
+    python_requires='>=3.7',
     install_requires=['setuptools'],
     zip_safe=False,
-    test_suite='zope.event.tests.test_suite',
     extras_require={
         'docs': [
             'Sphinx',
