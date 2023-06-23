@@ -2,7 +2,7 @@
  ``zope.event`` Changelog
 ==========================
 
-5.0 (unreleased)
+5.0 (2023-06-23)
 ================
 
 - Drop support for Python 2.7, 3.5, 3.6.
