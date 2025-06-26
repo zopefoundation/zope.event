@@ -32,7 +32,7 @@ def read(*rnames):
 
 setup(
     name='zope.event',
-    version='5.2.dev0',
+    version='6.0.dev0',
     url='https://github.com/zopefoundation/zope.event',
     license='ZPL-2.1',
     description='Very basic event publishing system',
