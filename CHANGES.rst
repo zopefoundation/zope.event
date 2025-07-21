@@ -7,6 +7,10 @@
 
 - Replace ``pkg_resources`` namespace with PEP 420 native namespace.
 
+- Require ``setuptools >= 75.8.2`` to prevent problems with the new packaging
+  standard.
+  (`#30 <https://github.com/zopefoundation/zope.event/issues/30>`_)
+
 
 5.1 (2025-06-26)
 ================
