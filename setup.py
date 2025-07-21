@@ -67,7 +67,7 @@ setup(
     namespace_packages=['zope', ],
     include_package_data=True,
     python_requires='>=3.9',
-    install_requires=['setuptools'],
+    install_requires=['setuptools >= 75.8.2'],
     zip_safe=False,
     extras_require={
         'docs': [
