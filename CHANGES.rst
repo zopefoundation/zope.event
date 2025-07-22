@@ -2,8 +2,8 @@
  ``zope.event`` Changelog
 ==========================
 
-5.2 (unreleased)
-================
+5.1.1 (2025-07-22)
+==================
 
 - Require ``setuptools >= 75.8.2`` to prevent problems with the new packaging
   standard.
