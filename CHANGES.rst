@@ -2,10 +2,14 @@
  ``zope.event`` Changelog
 ==========================
 
+
 6.0 (unreleased)
 ================
 
 - Replace ``pkg_resources`` namespace with PEP 420 native namespace.
+
+5.1.1 (2025-07-22)
+==================
 
 - Require ``setuptools >= 75.8.2`` to prevent problems with the new packaging
   standard.
