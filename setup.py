@@ -21,7 +21,6 @@
 
 import os
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -32,7 +31,7 @@ def read(*rnames):
 
 setup(
     name='zope.event',
-    version='5.1.2.dev0',
+    version='6.0.dev0',
     url='https://github.com/zopefoundation/zope.event',
     license='ZPL-2.1',
     description='Very basic event publishing system',
@@ -62,9 +61,6 @@ setup(
         "Framework :: Zope :: 3",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    packages=find_packages('src'),
-    package_dir={'': 'src'},
-    namespace_packages=['zope', ],
     include_package_data=True,
     python_requires='>=3.9',
     install_requires=['setuptools >= 75.8.2'],
@@ -74,7 +70,7 @@ setup(
             'Sphinx',
         ],
         'test': [
-            'zope.testrunner',
+            'zope.testrunner >= 6.4',
         ],
     },
 )

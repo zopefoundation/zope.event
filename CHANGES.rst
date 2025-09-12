@@ -2,11 +2,11 @@
  ``zope.event`` Changelog
 ==========================
 
-5.1.2 (unreleased)
-==================
 
-- Nothing changed yet.
+6.0 (unreleased)
+================
 
+- Replace ``pkg_resources`` namespace with PEP 420 native namespace.
 
 5.1.1 (2025-07-22)
 ==================
