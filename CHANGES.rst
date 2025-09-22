@@ -6,7 +6,7 @@
 6.1 (unreleased)
 ================
 
-- Remove unnecessary ``setuptools`` runtime dependency.
+- Remove no longer necessary ``setuptools`` runtime dependency.
 
 
 6.0 (2025-09-12)
