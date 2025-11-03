@@ -34,6 +34,7 @@ setup(
     version='6.1.dev0',
     url='https://github.com/zopefoundation/zope.event',
     license='ZPL-2.1',
+    license_files=['LICENSE.txt'],
     description='Very basic event publishing system',
     author='Zope Foundation and Contributors',
     author_email='zope-dev@zope.dev',
@@ -46,7 +47,6 @@ setup(
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: Zope Public License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
