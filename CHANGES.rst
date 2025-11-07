@@ -6,6 +6,8 @@
 6.1 (unreleased)
 ================
 
+- Drop support for Python 3.9.
+
 - Remove no longer necessary ``setuptools`` runtime dependency.
 
 
