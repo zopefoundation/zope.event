@@ -31,7 +31,7 @@ def read(*rnames):
 
 setup(
     name='zope.event',
-    version='6.1',
+    version='6.2.dev0',
     url='https://github.com/zopefoundation/zope.event',
     license='ZPL-2.1',
     license_files=['LICENSE.txt'],
