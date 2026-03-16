@@ -18,58 +18,8 @@
 ##############################################################################
 """Setup for zope.event package
 """
-
-import os
-
 from setuptools import setup
 
 
-def read(*rnames):
-    with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
-        return f.read()
-
-
-setup(
-    name='zope.event',
-    version='6.2.dev0',
-    url='https://github.com/zopefoundation/zope.event',
-    license='ZPL-2.1',
-    license_files=['LICENSE.txt'],
-    description='Very basic event publishing system',
-    author='Zope Foundation and Contributors',
-    author_email='zope-dev@zope.dev',
-    long_description=(
-        read('README.rst')
-        + '\n' +
-        read('CHANGES.rst')
-    ),
-    keywords="event framework dispatch subscribe publish",
-    classifiers=[
-        "Development Status :: 5 - Production/Stable",
-        "Intended Audience :: Developers",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.10",
-        "Programming Language :: Python :: 3.11",
-        "Programming Language :: Python :: 3.12",
-        "Programming Language :: Python :: 3.13",
-        "Programming Language :: Python :: 3.14",
-        "Programming Language :: Python :: Implementation :: CPython",
-        "Programming Language :: Python :: Implementation :: Jython",
-        "Programming Language :: Python :: Implementation :: PyPy",
-        "Framework :: Zope :: 3",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-    ],
-    include_package_data=True,
-    python_requires='>=3.10',
-    zip_safe=False,
-    extras_require={
-        'docs': [
-            'Sphinx',
-        ],
-        'test': [
-            'zope.testrunner >= 6.4',
-        ],
-    },
-)
+# See pyproject.toml for package metadata
+setup()
