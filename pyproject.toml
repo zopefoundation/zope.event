@@ -1,12 +1,61 @@
-# Generated from:
-# https://github.com/zopefoundation/meta/tree/master/config/pure-python
-
+# Generated with zope.meta (https://zopemeta.readthedocs.io/) from:
+# https://github.com/zopefoundation/meta/tree/master/src/zope/meta/pure-python
 [build-system]
 requires = [
     "setuptools >= 78.1.1,< 81",
     "wheel",
 ]
 build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "zope.event"
+version = "6.2.dev0"
+description = "Very basic event publishing system"
+license = "ZPL-2.1"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: Jython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Framework :: Zope :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["readme"]
+requires-python = ">=3.10"
+authors = [
+    {name = "Zope Foundation and contributors",email = "zope-dev@zope.dev"},
+]
+maintainers = [
+    {name = "Plone Foundation and contributors",email = "zope-dev@zope.dev"},
+]
+keywords = [
+    "event",
+    "framework",
+    "dispatch",
+    "subscribe",
+    "publish",
+]
+
+[project.optional-dependencies]
+docs = ["Sphinx"]
+test = ["zope.testrunner >= 6.4"]
+
+[project.urls]
+Documentation = "https://zopeevent.readthedocs.io/"
+Source = "https://github.com/zopefoundation/zope.event"
+Issues = "https://github.com/zopefoundation/zope.event/issues"
+Changelog = "https://raw.githubusercontent.com/zopefoundation/zope.event/master/CHANGES.rst"
+
 
 [tool.coverage.run]
 branch = true
@@ -30,3 +79,7 @@ exclude_lines = [
 
 [tool.coverage.html]
 directory = "parts/htmlcov"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst", "CHANGES.rst"]}
+
