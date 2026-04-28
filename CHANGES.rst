@@ -2,11 +2,12 @@
  ``zope.event`` Changelog
 ==========================
 
-
 6.2 (unreleased)
 ================
 
 - Move package metadata from setup.py to pyproject.toml.
+
+- Allow ``setuptools < 82`` as build system. 
 
 
 6.1 (2025-11-07)
