@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zope.event"
-version = "6.2"
+version = "6.3.dev0"
 description = "Very basic event publishing system"
 license = "ZPL-2.1"
 classifiers = [
