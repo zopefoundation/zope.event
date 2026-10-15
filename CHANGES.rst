@@ -15,7 +15,7 @@
 
 - Move package metadata from setup.py to pyproject.toml.
 
-- Allow ``setuptools < 82`` as build system. 
+- Allow ``setuptools < 82`` as build system.
 
 
 6.1 (2025-11-07)
