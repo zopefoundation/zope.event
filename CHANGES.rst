@@ -5,7 +5,9 @@
 6.3 (unreleased)
 ================
 
-- Nothing changed yet.
+- Add support for Python 3.15.
+
+- Drop support for Python 3.10.
 
 
 6.2 (2026-04-28)
@@ -13,7 +15,7 @@
 
 - Move package metadata from setup.py to pyproject.toml.
 
-- Allow ``setuptools < 82`` as build system. 
+- Allow ``setuptools < 82`` as build system.
 
 
 6.1 (2025-11-07)
